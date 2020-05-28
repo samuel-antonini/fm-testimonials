@@ -76,7 +76,7 @@ section.main {
   color: #babacf;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 415px) {
   body {
     background-size: 40%;
   }
@@ -109,7 +109,7 @@ section.main {
 
   .user-quote {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     margin: 0 -13rem 0 0;
   }
 
@@ -120,6 +120,18 @@ section.main {
   }
   .user-tag span {
     margin-right: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .user-quote {
+    font-size: 1.25rem;
+    margin: 0 -9rem 0 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .user-quote {
+    font-size: 2.5rem;
+    margin: 0 -13rem 0 0;
   }
 }
 

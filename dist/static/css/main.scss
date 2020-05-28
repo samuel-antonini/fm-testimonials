@@ -5,7 +5,8 @@ $colors: (
   grayish-blue: hsl(240, 18%, 77%),
 );
 
-$break-mobile: 376px;
+$break-small: 415px;
+$break-medium: 768px;
 $break-desktop: 1440px;
 
 @function color($color-name) {
@@ -94,7 +95,7 @@ section.main {
   }
 }
 
-@media screen and (min-width: $break-mobile) {
+@media screen and (min-width: $break-small) {
   body {
     background-size: 40%;
   }
@@ -129,7 +130,7 @@ section.main {
 
   .user-quote {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     margin: 0 -13rem 0 0;
   }
 
@@ -142,5 +143,19 @@ section.main {
       margin-right: 0.5rem;
     }
 
+  }
+}
+
+@media screen and (min-width: $break-medium) {
+  .user-quote {
+    font-size: 1.25rem;
+    margin: 0 -9rem 0 0;
+  }
+}
+
+@media screen and (min-width: $break-desktop) {
+  .user-quote {
+    font-size: 2.5rem;
+    margin: 0 -13rem 0 0;
   }
 }

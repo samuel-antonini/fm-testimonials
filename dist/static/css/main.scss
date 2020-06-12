@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
 $colors: (
-  dark-blue: hsl(240, 38%, 20%),
-  grayish-blue: hsl(240, 18%, 77%),
+        dark-blue: hsl(240, 38%, 20%),
+        grayish-blue: hsl(240, 18%, 77%),
 );
 
 $break-small: 415px;
@@ -10,7 +10,7 @@ $break-medium: 768px;
 $break-desktop: 1440px;
 
 @function color($color-name) {
-    @return map-get($colors, $color-name)
+  @return map-get($colors, $color-name)
 }
 
 html {
@@ -23,6 +23,7 @@ body {
   height: 100vh;
   background: url("../img/pattern-curve.svg") left bottom no-repeat;
   background-size: 75%;
+  overflow-x: hidden;
 }
 
 section.main {
@@ -150,6 +151,10 @@ section.main {
   .user-quote {
     font-size: 1.25rem;
     margin: 0 -9rem 0 0;
+  }
+
+  .slider {
+    margin: -90px 0 25px 140px;
   }
 }
 

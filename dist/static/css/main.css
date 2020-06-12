@@ -9,6 +9,7 @@ body {
   height: 100vh;
   background: url("../img/pattern-curve.svg") left bottom no-repeat;
   background-size: 75%;
+  overflow-x: hidden;
 }
 
 section.main {
@@ -126,6 +127,10 @@ section.main {
   .user-quote {
     font-size: 1.25rem;
     margin: 0 -9rem 0 0;
+  }
+
+  .slider {
+    margin: -90px 0 25px 140px;
   }
 }
 @media screen and (min-width: 1440px) {
